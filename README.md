@@ -2,6 +2,7 @@
 This date control used for scenic ticket buy
 
 # Use method
+<pre>
 var dpc = $("#calendar").InitDailyPriceCalendar({<br/>
     startdate : '2016-08-22',//控制开始日期   <br/>
     enddate : null,//控制结束日期   <br/>
@@ -15,6 +16,7 @@ var dpc = $("#calendar").InitDailyPriceCalendar({<br/>
         $("#linkBack").click();<br/>
     }<br/>
 });<br/>
-
+</pre>
 # Demo page
-index.html
+<a href="https://zhf1206.github.io/ScenicDate/index.html">demo page:https://zhf1206.github.io/ScenicDate/index.html</a>
+

@@ -17,3 +17,4 @@ var dpc = $("#calendar").InitDailyPriceCalendar({
 });
 
 # Demo page
+index.html

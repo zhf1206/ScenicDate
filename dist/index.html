@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>日期选择</title>
+    <script src="src/rem.js"></script>
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/calendar.css">
+    <script src="src/jquery-2.2.0.js"></script>
+    <script src="src/jquery.scrollstop.js"></script>
+    <script src="src/mobilecalendar.js"></script>
+    <style type="text/css">
+        .col5{width:50%;}
+        .text-l{text-align: left;}
+        .text-r{text-align: right;}
+        .travel-date{position:relative;padding: 0 5%;height:40px;line-height: 40px;font-size: .38rem;}
+        .travel-date:after {content:"";  position: absolute;  bottom:0px;  left:0px;  right:0px;  border-bottom:1px solid #ccc;  -webkit-transform:scaleY(.5);  -webkit-transform-origin:0 0;}
+        .travel-date-labl{text-align: left;}
+        .travel-date-labr{text-align: right;float:right;}
+    </style>
+</head>
+
+<body>
+<div id="content">
+    <div class="travel-date"><span class="col5 travel-date-labl">出行日期</span><span class="col5 travel-date-labr"><span id="appDate">选择日期</span>&gt;</span></div>
+</div>
+<section id="selDate" class="hp-page hide">
+    <header class="hp-header head-top">
+        <div class="ui-div">
+            <a id="linkBack" href="javascript:;" class="hap-btn back" data-role="button" data-rel="back"></a>
+        </div>
+        <h1 class="hp-title">选择日期</h1>
+        <div class="ui-div-r">
+            <a id="linkClose" class="ui-btn btn-close" data-transition="slidedown" data-rel="back">关闭</a>
+        </div>
+    </header>
+    <article data-role="content" class="hp-content">
+        <div id="calendar" class="Time-main"></div>
+    </article>
+</section>
+</body>
+</html>
+<script>
+    var dpc;
+    $(document).ready(function(){
+
+        $(document).on("scrollstop", function(e){
+            if((document.body.scrollHeight - (window.pageYOffset + document.documentElement.clientHeight)) < 400){
+                dpc.addMonth();
+            }
+        });
+
+        dpc = $("#calendar").InitDailyPriceCalendar({
+            startdate : '2016-08-22',
+            enddate : '2016-10-10',
+            weekend : [6,0],
+            datetdCellClick : function(result){
+                if(result != null && result != undefined){
+                    $("#appDate").attr("data-value", result);
+                    $("#appDate").html(result);
+                }
+                $("#linkBack").click();
+            }
+        });
+
+        $("#appDate").click(function(){
+            $("#selDate").show();
+            $("#content").hide();
+        });
+    });
+</script>

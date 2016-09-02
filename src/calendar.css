@@ -1,0 +1,203 @@
+﻿.hp-page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: none;
+    border: 0;
+}
+
+.hp-header .hp-title, .hp-footer .hp-title {
+    font-size: 1em;
+    min-height: 1.1em;
+    text-align: center;
+    display: block;
+    margin: 0 30%;
+    padding: .7em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0 !important;
+}
+
+.hp-header, .hp-footer {
+    border-width: 1px 0;
+    border-style: solid;
+    position: relative;
+}
+
+.hp-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 0.2rem;
+    background: #fff;
+}
+
+a, a:hover, a:active, a:visited, a:link {
+    font-weight: normal !important;
+    color: #82b701;
+}
+
+.head-top {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #4B9DFF;
+    border: 0px;
+}
+
+.head-sliver {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    border: 0px;
+}
+
+.hp-page .head-top h1 {
+    color: #fff;
+    font-size: 0.32rem;
+    font-weight: normal;
+}
+
+.ui-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    padding-left: 4%;
+    width: 10%;
+    height: 40px;
+}
+.ui-div-r {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    padding-right: 4%;
+    width: 10%;
+    height: 40px;
+}
+
+.head-top .back {
+    background: url(back.png) no-repeat;
+    background-size: 10px 17px;
+}
+
+.btn-close {
+    padding: 0;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    float: right;
+    color: #fff;
+    border: 0;
+    font-size:.32rem;
+    text-align: center;
+}
+
+.pCalendar {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.pCalendar .cheader {
+    background-color: #f5f8fa;
+    height: 30px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 11px;
+}
+
+.pCalendar .cheader .theader {
+    text-align: center;
+}
+
+.pCalendar tr td {
+    border-bottom: 1px dotted #c2c2c2;
+    cursor: pointer;
+    width: 14%;
+    text-align: center;
+}
+
+.pCalendar tr td div {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.pCalendar .selected div {
+    color: #fff !important;
+    background-color: #f65530 !important;
+    border-radius: 20px;
+}
+
+.pCalendar .ctoday div {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+}
+
+.pCalendar tbody tr {
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+}
+
+.pCalendar tbody tr:first-child td {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.pCalendar tbody tr:last-child td {
+    border-bottom: none
+}
+
+.pCalendar .disabledtd {
+    color: #ccc;
+}
+
+.monthTitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Time-main {
+    padding: 30px 0;
+    background: #FFF;
+    border-radius: 3px;
+    background-color: #edeff0;
+}
+
+.Time-Div {
+    height: 45px;
+    font-size: 0.32em;
+    text-align: center;
+    line-height: 45px;
+    color: #82b701;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+}
+
+.hap-btn {
+    font-size: 16px;
+    margin: .7em 0;
+    padding: .7em 1em;
+    display: block;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

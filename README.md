@@ -20,3 +20,8 @@ var dpc = $("#calendar").InitDailyPriceCalendar({<br/>
 # Demo page
 <a href="https://zhf1206.github.io/ScenicDate/index.html">https://zhf1206.github.io/ScenicDate/index.html</a>
 
+# License
+
+MIT
+
+Copyright (c) 2015-2016 zeke

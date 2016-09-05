@@ -22,6 +22,6 @@ var dpc = $("#calendar").InitDailyPriceCalendar({<br/>
 
 # License
 
-MIT
+<a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
 
 Copyright (c) 2015-2016 zeke
